@@ -1,0 +1,335 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/select_ur_preferences"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/nfc_info"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/view_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_lang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_lang" />
+
+            <Spinner
+                android:id="@+id/spinner_langs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/lang_array"
+                android:prompt="@string/select_lang" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_touch_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_touch_present"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_touch_present" />
+
+            <Spinner
+                android:id="@+id/spinner_touch_present"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/touch_present_array"
+                android:prompt="@string/select_touch_present" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_lang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_font_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_font_size" />
+
+            <Spinner
+                android:id="@+id/spinner_font_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/font_size_array"
+                android:prompt="@string/select_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_font_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_voice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_voice" />
+
+            <Spinner
+                android:id="@+id/spinner_voice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/tts_voice_array"
+                android:prompt="@string/select_voice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_voice_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_voice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_voice_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_voice_speed" />
+
+            <Spinner
+                android:id="@+id/spinner_voice_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/tts_speed_array"
+                android:prompt="@string/select_voice_speed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_reverse_scrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_reverse_scrn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_reverse_scrn" />
+
+            <Spinner
+                android:id="@+id/spinner_reverse_scrn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/reverse_scrn_array"
+                android:prompt="@string/select_reverse_scrn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_scan_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_scan_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_scan_mode" />
+
+            <Spinner
+                android:id="@+id/spinner_scan_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/scan_mode_array"
+                android:prompt="@string/select_scan_mode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_scan_mode_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_scan_mode_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_scan_mode_speed" />
+
+            <Spinner
+                android:id="@+id/spinner_scan_mode_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/scan_mode_speed_array"
+                android:prompt="@string/select_scan_mode_speed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_qr_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_qr_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/select_qr_size" />
+
+            <Spinner
+                android:id="@+id/spinner_qr_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/qr_size_array"
+                android:prompt="@string/select_qr_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_select_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_reverse_scrn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/btn_scanner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/launch_scanner" />
+
+            <Button
+                android:id="@+id/btn_qr_gen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/gen_qr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_write_nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/btn_write_nfc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/write_nfc" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_qr_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/qr_image_to_mail_hint"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_qr_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

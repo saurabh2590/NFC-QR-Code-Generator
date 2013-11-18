@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Qr App</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_lang">Select the Language</string>
+    <string name="select_touch_present">Select touch present</string>
+    <string name="select_font_size">Select the font size</string>
+    <string name="select_voice">Select the voice</string>
+    <string name="select_scan_mode">Select the scan mode</string>
+    <string name="select_voice_speed">Select the voice speed</string>
+    <string name="select_scan_mode_speed">Select the scan mode speed</string>
+    <string name="launch_scanner">Launch Scanner</string>
+    <string name="gen_qr">Generate Qr Code</string>
+    <string name="select">Select one value to add to preferences</string>
+    <string name="select_reverse_scrn">Select reverse screen</string>
+    <string name="select_ur_preferences">Select your preferences</string>
+    <string name="select_qr_size">Select the QR image size</string>
+    <string name="write_nfc">Write info to NFC</string>
+    <string name="launch_nfc_setting">Press ok to launch nfc settings</string>
+
+    <string-array name="qr_size_array">
+        <item>500</item>
+        <item>400</item>
+        <item>300</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="lang_array_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="touch_present_array">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="touch_present_array_value">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="font_size_array">
+        <item>STD</item>
+        <item>LARGE</item>
+        <item>X-LARGE</item>
+        <item>XX-LARGE</item>
+    </string-array>
+    <string-array name="font_size_array_value">
+        <item>30</item>
+        <item>37</item>
+        <item>44</item>
+        <item>51</item>
+    </string-array>
+    <string-array name="tts_voice_array">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+    <string-array name="tts_voice_array_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tts_speed_array">
+        <item>STD</item>
+        <item>SLOWEST</item>
+        <item>VERY SLOW</item>
+        <item>SLOW</item>
+        <item>FAST</item>
+        <item>VERY FAST</item>
+        <item>FASTEST</item>
+    </string-array>
+    <string-array name="tts_speed_array_value">
+        <item>0.8</item>
+        <item>0.2</item>
+        <item>0.4</item>
+        <item>0.6</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.4</item>
+    </string-array>
+    <string-array name="reverse_scrn_array">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="reverse_scrn_array_value">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="scan_mode_array">
+        <item>OFF</item>
+        <item>ON</item>
+    </string-array>
+    <string-array name="scan_mode_array_value">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="scan_mode_speed_array">
+        <item>STD</item>
+        <item>SLOW</item>
+        <item>FAST</item>
+    </string-array>
+    <string-array name="scan_mode_speed_array_value">
+        <item>10</item>
+        <item>5</item>
+        <item>15</item>
+    </string-array>
+        <string name="nfc_info">After selecting your preferences, please bring your NFC tag near the front camera of the tablet screen</string>
+        <string name="qrcode_filename_prefix">qrCode_</string>
+        <string name="qr_image_to_mail_hint">Click on the QR image to mail</string>
+
+</resources>
